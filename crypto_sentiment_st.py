@@ -109,7 +109,7 @@ def crypto_tweets(name):
     # we use this function to subtract 60 mins from our datetime string
 
     now = datetime.utcnow() - timedelta(seconds=10) # get the current datetime, this is our starting point convert to UTC 
-    last_week = now - timedelta(days=3,seconds=10)  # datetime one week ago = the finish line
+    last_week = now - timedelta(days=6,seconds=10)  # datetime one week ago = the finish line
     now = now.strftime(dtformat)  # convert now datetime to format for API
 
     df1 = pd.DataFrame()  # initialize dataframe to store tweets
