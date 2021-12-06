@@ -1,8 +1,11 @@
-import streamlit as st
+import requests #for api requests
+
+
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 # warnings.filterwarnings("ignore")
 plt.style.use('fivethirtyeight')
-import pandas as pd
 #import statsmodels.api as sm
 import matplotlib
 import matplotlib.pyplot as plt
@@ -18,11 +21,12 @@ matplotlib.rcParams['text.color'] = 'k'
 #from statsmodels.tsa.stattools import adfuller
 #from statsmodels.tsa.seasonal import seasonal_decompose
 
-import requests #for api requests
 import flair
 sentiment_model = flair.models.TextClassifier.load('sentiment-fast')# for sentiment analysis
 import re #for regex
 from datetime import datetime, timedelta #for date manipulation
+import streamlit as st #data vis
+
 
 
 def get_data_v2(tweet):
