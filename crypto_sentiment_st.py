@@ -294,8 +294,8 @@ Below are the **correlation ratios** and ***plot*** of the cryptocurrency of you
    
 """)
 
-symbol = st.text_input('Input the cryptocurrency symbol:', 'btc')
-coin = st.text_input('Input the cryptocurrency name to search on Twitter:', 'bitcoin')
+symbol = st.text_input('Input cryptocurrency symbol:', 'btc')
+coin = st.text_input('Input cryptocurrency name to search on Twitter:', 'bitcoin')
 
 
 
