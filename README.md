@@ -1,4 +1,4 @@
-# crypto_sentiment_analysis_project
+# sentiment_analysis_cryptocurrency_project
 Final project for Ironhack Data Analytics Bootcamp: Compare correlation of the price performance of a cryptocurrency with the sentiment of over 20,000 Tweets. 
 
 1. Refer to crypto_sentiment_st.py file to deploy app on your web browser via Streamlit
