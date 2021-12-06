@@ -109,7 +109,7 @@ def crypto_tweets(name):
 
     dtformat = '%Y-%m-%dT%H:%M:%SZ'  # the date format string required by twitter
 
-    # we use this function to subtract 60 mins from our datetime string
+    # use this function to subtract 60 mins from our datetime string
 
     now = datetime.utcnow() - timedelta(seconds=10) # get the current datetime, this is our starting point convert to UTC 
     last_week = now - timedelta(days=6,seconds=10)  # datetime one week ago = the finish line
@@ -119,7 +119,7 @@ def crypto_tweets(name):
 
     while True:
         if datetime.strptime(now, dtformat) < last_week:
-            # if we have reached 7 days ago, break the loop
+            # if reached 6 days ago, break the loop
             break
         pre60 = time_travel(now, 60)  # get 60 minutes before 'now'
         # assign from and to datetime parameters for the API
@@ -132,7 +132,7 @@ def crypto_tweets(name):
         # iteratively append our tweet data to our dataframe
 
         for tweet in response.json()['data']:
-            row = get_data_v2(tweet)  # we defined this function earlier
+            row = get_data_v2(tweet)  #defined this function earlier
             df1 = df1.append(row, ignore_index=True)
     df1_sentiment = sentiment_generator_fast(df1)
     return df1_sentiment
