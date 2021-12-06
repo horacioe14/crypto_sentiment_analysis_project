@@ -7,4 +7,4 @@ Final project for Ironhack Data Analytics Bootcamp: Compare correlation of the p
 4. (Easier to run on Conda Environment) 
 5. Boring option - Run project on Jupyter Notebook with .ipynb file.
 
-Credits: https://towardsdatascience.com/sentiment-analysis-for-stock-price-prediction-in-python-bed40c65d178
+Source: https://towardsdatascience.com/sentiment-analysis-for-stock-price-prediction-in-python-bed40c65d178
